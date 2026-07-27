@@ -12,13 +12,16 @@ Currently looking for a full-time data role in the GTA.
 
 #### Selected work
 
-**[sql-data-warehouse](https://github.com/C0k11/sql-data-warehouse)** — A medallion
-data warehouse in T-SQL on SQL Server: bronze → silver → gold, a Type-2 customer
-dimension with hash-based change detection, and a gate of 40 declarative quality
-checks that fails the pipeline rather than logging and moving on. Rebuilds 116,294
-source rows from scratch in a container on every push. The README documents the
-defects the checks caught, including one where every gender value in 18,483 rows was
-silently corrupted while every domain check still passed.
+**[sql-data-warehouse](https://github.com/C0k11/sql-data-warehouse)** — One warehouse
+spec, built twice: T-SQL on SQL Server and PySpark + Delta Lake, the second running
+unchanged on a laptop, in CI, and on Databricks. A Type-2 customer dimension with
+hash-based change detection, and a gate of 40 declarative quality checks that fails
+the pipeline rather than logging and moving on. The reason to build it twice is that
+the two can be diffed — a parity harness compares 296 measurements across 11 tables
+and they match exactly, so "the migration changed no data" is a test result rather
+than a claim. The README documents the defects the checks caught, including one where
+every gender value in 18,483 rows was silently corrupted while every domain check
+still passed.
 
 **[credit-default-prediction](https://github.com/C0k11/credit-default-prediction)** —
 Loan default risk on Home Credit data: 307,511 applicants, 58.1M rows across six
@@ -49,8 +52,9 @@ pack (window functions, CTEs, anti-join audits) validated against a live databas
 
 #### What I work with
 
-`SQL Server / T-SQL` `Python` `dbt` `DuckDB` `MySQL` `pandas` `LightGBM`
-`scikit-learn` `SHAP` `Tableau` `Docker` `GitHub Actions` `Git`
+`SQL Server / T-SQL` `Python` `PySpark` `Delta Lake` `Databricks` `dbt` `DuckDB`
+`MySQL` `pandas` `LightGBM` `scikit-learn` `SHAP` `Tableau` `Docker`
+`GitHub Actions` `Git`
 
 ---
 
