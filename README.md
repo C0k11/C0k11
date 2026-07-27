@@ -36,8 +36,9 @@ engine computed — never does the math itself.
 **[game-ui-cv-agent](https://github.com/C0k11/game-ui-cv-agent)** — An end-to-end
 computer-vision data pipeline: 47K frames collected, then narrowed to a 34K-image
 labelled training set by automated dedup, train/val leakage detection and label
-audits. Three YOLO detectors covering 455 classes; the UI model reaches 98.2% mAP50 —
-measured on 129 of the 184 classes that actually have validation coverage, which the
+audits. Three YOLO detectors covering 455 classes; the UI model reaches 98.1% mAP50,
+re-measured on the frozen deployed weights rather than read off a training log —
+and on 129 of the 184 classes that actually have validation coverage, which the
 README states outright rather than rounding into a headline number.
 
 **[Conference-Database](https://github.com/C0k11/Conference-Database)** — A normalized
