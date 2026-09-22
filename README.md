@@ -1,6 +1,11 @@
-### Jerry (Shien) Zhang
+<a href="https://personal-portfolio-jade-eta-20.vercel.app">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/banner-still.png">
+    <img src="assets/banner.webp" alt="Jerry Zhang, data and ML engineer, Toronto" width="100%">
+  </picture>
+</a>
 
-Data and ML engineer in Toronto. BComp (Honours), Queen's University, 2026.
+I'm Jerry (Shien) Zhang, a data and ML engineer in Toronto. BComp (Honours), Queen's University, 2026.
 
 I build data pipelines and predictive models end to end. What I care about is
 whether the numbers hold up when someone pushes on them - so most of what is
