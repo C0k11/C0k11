@@ -17,6 +17,14 @@ Currently looking for a full-time data or ML role in the GTA.
 
 #### Selected work
 
+**[vlm-product-attributes](https://github.com/C0k11/vlm-product-attributes)** - Product type,
+color and material from product photos with a LoRA-tuned Qwen3.5-4B, returned as JSON. On a
+leak-checked, hash-frozen test split of 5,437 Amazon listings, fine-tuning lifts photo-only
+accuracy from 0.70 / 0.72 / 0.80 to 0.86 / 0.79 / 0.88. A CLIP linear probe is a tough
+baseline: the model beats it on color and ties on the rest, and the README says so. Served
+with vLLM on one RTX 4090, going from 23 to 64 images/s on the val split after a shorter
+prompt, a merged adapter and FP8 weights (FP8 costs 0.65 points on color).
+
 **[sql-data-warehouse](https://github.com/C0k11/sql-data-warehouse)** - One warehouse
 spec, built twice: T-SQL on SQL Server and PySpark + Delta Lake, the second running
 unchanged on a laptop, in CI, and on Databricks. A Type-2 customer dimension with
@@ -63,7 +71,7 @@ pack (window functions, CTEs, anti-join audits) validated against a live databas
 #### What I work with
 
 `Python` `SQL Server / T-SQL` `Snowflake` `PySpark` `Delta Lake` `Databricks` `dbt`
-`DuckDB` `MySQL` `pandas` `LightGBM` `scikit-learn` `SHAP` `PyTorch` `QLoRA`
+`DuckDB` `MySQL` `pandas` `LightGBM` `scikit-learn` `SHAP` `PyTorch` `QLoRA` `vLLM`
 `AWS` `Terraform` `Docker` `GitHub Actions` `Power BI` `Tableau` `Git`
 
 ---
